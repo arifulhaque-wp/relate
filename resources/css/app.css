@@ -1,0 +1,64 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* custom fonts */
+@font-face {
+  font-family: 'Studio Sans';
+  src: url('../fonts/StudioSans-Bold.woff2') format('woff2'),
+      url('../fonts/StudioSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Studio Sans';
+  src: url('../fonts/StudioSans-Regular.woff2') format('woff2'),
+      url('../fonts/StudioSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Liberation Serif';
+  src: url('../fonts/LiberationSerif.woff2') format('woff2'),
+      url('../fonts/LiberationSerif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Liberation Serif';
+  src: url('../fonts/LiberationSerif-Bold.woff2') format('woff2'),
+      url('../fonts/LiberationSerif-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* custom css */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Liberation Serif', sans-serif;
+  font-weight: bold;
+}
+.section-heading {
+  @apply font-bold text-4xl text-center mb-10
+}
+.fullwidth-btn {
+  @apply bg-gray-800 text-white text-center px-4 py-2 rounded-md w-full inline-block
+}
+.sticky-header-active {
+  background-color: #fff;
+}
+.sticky-header-active a {
+  color: #333;
+}
