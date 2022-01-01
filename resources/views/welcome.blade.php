@@ -6,7 +6,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, minus?</p>
         </div>
     </div>
-
+    
     <!-- Search From Area -->
     <div class="-mt-10">
         <div class="container">
@@ -78,7 +78,7 @@
                             <div class="flex flex-wrap justify-between text-xs text-gray-400 mb-2">
                                 <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bathrooms</span>
                                 <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bedrooms</span>
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">15,000 ft</span>
+                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">15,000 ft<sup>2</sup></span>
                             </div>
                             <a href="#" class="fullwidth-btn hover:bg-gray-600 duration-300">More details</a>
                         </div>

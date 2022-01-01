@@ -16,9 +16,9 @@ class CreatePropertiesTable extends Migration {
             $table->string( column:'name' );
             $table->string( column:'featured_image' );
             $table->unsignedBigInteger( column:'price' );
-            $table->unsignedBigInteger( column:'sale' )->default( 1 )->comment( '0=rent, 1=rent' );
+            $table->unsignedBigInteger( column:'sale' )->default( 1 )->comment( '0=rent, 1=sale' );
             $table->unsignedBigInteger( column:'type' )->default( 1 )->comment( '0=land, 1=villa, 2=apartment' );
-            $table->unsignedBigInteger( column:'bedroom' )->nullable();
+            $table->string( column:'bedroom' )->nullable();
             $table->timestamps();
         } );
     }
