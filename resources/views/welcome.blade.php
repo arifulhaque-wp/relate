@@ -69,66 +69,23 @@
         <div class="pt-20">
             <h2 class="section-heading">Last Added Projects</h2>
             <div class="flex -mx-4">
+                @foreach($latest_properties as $property)
                 <div class="flex-1 px-4">
                     <div class="bg-white rounded-lg">
                         <div style="min-height: 150px;" class="block bg-gray-500 rounded-tl-lg rounded-tr-lg"></div>
                         <div class="p-2">
-                            <h3 class="text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <h2 class="pb-2 text-2xl">AED 490,000</h2>
+                            <h3 class="text-xl">{{$property->name}}</h3>
+                            <h2 class="pb-2 text-2xl">{{$property->price}} &#8378;</h2>
                             <div class="flex flex-wrap justify-between text-xs text-gray-400 mb-2">
                                 <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bathrooms</span>
                                 <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bedrooms</span>
                                 <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">15,000 ft<sup>2</sup></span>
                             </div>
-                            <a href="#" class="fullwidth-btn hover:bg-gray-600 duration-300">More details</a>
+                            <a href="{{route('single-property', $property->id)}}" class="fullwidth-btn hover:bg-gray-600 duration-300">More details</a>
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 px-4">
-                    <div class="bg-white rounded-lg">
-                        <div style="min-height: 150px;" class="block bg-gray-500 rounded-tl-lg rounded-tr-lg"></div>
-                        <div class="p-2">
-                            <h3 class="text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <h2 class="pb-2 text-2xl">AED 490,000</h2>
-                            <div class="flex flex-wrap justify-between text-xs text-gray-400 mb-2">
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bathrooms</span>
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bedrooms</span>
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">15,000 ft</span>
-                            </div>
-                            <a href="#" class="fullwidth-btn hover:bg-gray-600 duration-300">More details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-1 px-4">
-                    <div class="bg-white rounded-lg">
-                        <div style="min-height: 150px;" class="block bg-gray-500 rounded-tl-lg rounded-tr-lg"></div>
-                        <div class="p-2">
-                            <h3 class="text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <h2 class="pb-2 text-2xl">AED 490,000</h2>
-                            <div class="flex flex-wrap justify-between text-xs text-gray-400 mb-2">
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bathrooms</span>
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bedrooms</span>
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">15,000 ft</span>
-                            </div>
-                            <a href="#" class="fullwidth-btn hover:bg-gray-600 duration-300">More details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-1 px-4">
-                    <div class="bg-white rounded-lg">
-                        <div style="min-height: 150px;" class="block bg-gray-500 rounded-tl-lg rounded-tr-lg"></div>
-                        <div class="p-2">
-                            <h3 class="text-xl">Lorem ipsum dolor sit amet consectetur.</h3>
-                            <h2 class="pb-2 text-2xl">AED 490,000</h2>
-                            <div class="flex flex-wrap justify-between text-xs text-gray-400 mb-2">
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bathrooms</span>
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">3 Bedrooms</span>
-                                <span class="mb-0.5 p-1 border border-gray-100 rounded-2xl">15,000 ft</span>
-                            </div>
-                            <a href="#" class="fullwidth-btn hover:bg-gray-600 duration-300">More details</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 

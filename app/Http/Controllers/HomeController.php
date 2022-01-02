@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Property;
 
-class HomeController extends Controller
-{
+class HomeController extends Controller {
     public function home() {
-        $data = 'test';
-        return view('welcome', [
-            'data'=> $data
-        ]);
+
+        $latest_properties = Property::all();
+
+        return view( 'welcome', [
+            'latest_properties' => $latest_properties,
+        ] );
     }
 }
