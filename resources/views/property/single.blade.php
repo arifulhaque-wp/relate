@@ -151,7 +151,7 @@
           <h1 class="text-2xl font-normal leading-none mb-5">Enquire about this property</h1>
 
          
-          <p class="mb-6 p-3 bg-green-100 text-green-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ducimus at reiciendis, nemo adipisci amet.</p>
+          <p class="mb-6 p-3 bg-green-100 text-green-700">Lorem ipsum dolor sit amet.</p>
           
 
           <form action="" method="POST" enctype="multipart/form-data">
@@ -163,7 +163,7 @@
                 value="" required>
 
               
-              <p class="text-red-500 mt-2 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic earum vitae necessitatibus facere optio. Ducimus!</p>
+              <p class="text-red-500 mt-2 text-sm">Lorem ipsum, dolor sit!</p>
               
             </div>
 
@@ -173,7 +173,7 @@
                 required>
 
               
-              <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur perferendis quod quis debitis obcaecati laboriosam.</p>
+              <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor, sit.</p>
               
             </div>
 
@@ -183,16 +183,16 @@
                 value="" required>
 
               
-              <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit eaque enim eligendi quidem veniam!</p>
+              <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor sit!</p>
               
             </div>
 
             <div class="mt-5">
               <label class="inputLabel" for="message">Message <span class="text-red-800 font-serif">*</span></label>
               <textarea class="inputField" id="message" name="message" rows="4"
-                placeholder="I'm interested in this property" required>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit eaque enim eligendi quidem veniam!</textarea>
+                placeholder="I'm interested in this property" required></textarea>
               
-              <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit eaque enim eligendi quidem veniam!</p>
+              <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor sit!</p>
               
             </div>
             <div class="mt-5">
