@@ -7,7 +7,7 @@
         <li class="mx-3"><i class="fa fa-angle-right"></i></li>
         <li><a class="text-base text-red-800" href="#">Property</a></li>
         <li class="mx-3"><i class="fa fa-angle-right"></i></li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <li>{{$property->name}}</li>
       </ul>
     </div>
   </div>
@@ -15,8 +15,8 @@
   <!-- Title & Share -->
   <div class="bg-white py-8">
     <div class="container mx-auto">
-      <h2 class="text-3xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-      <h3 class="text-lg mt-2">Price: <span class="text-red-800">700000 &#8378;</span>
+      <h2 class="text-3xl text-gray-600">{{$property->name}}</h2>
+      <h3 class="text-lg mt-2">Price: <span class="text-red-800">{{$property->price}} &#8378;</span>
       </h3>
     </div>
   </div>
