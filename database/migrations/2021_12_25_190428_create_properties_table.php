@@ -15,7 +15,7 @@ class CreatePropertiesTable extends Migration {
             $table->id();
             $table->string( column:'name' );
             
-            $table->unsignedBigInteger( column:'featured_media_id' );
+            $table->unsignedBigInteger( column:'featured_image' );
             $table->unsignedBigInteger( column:'location_id' );
 
             $table->unsignedBigInteger( column:'price' );
@@ -34,7 +34,7 @@ class CreatePropertiesTable extends Migration {
 
             $table->timestamps();
 
-            $table->foreign( 'featured_media_id' )->references( 'id' )->on( 'media' );
+            // $table->foreign( 'featured_media_id' )->references( 'id' )->on( 'media' );
             $table->foreign( 'location_id' )->references( 'id' )->on( 'locations' );
         } );
     }
