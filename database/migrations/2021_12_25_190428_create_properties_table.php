@@ -15,7 +15,7 @@ class CreatePropertiesTable extends Migration {
             $table->id();
             $table->string( column:'name' );
             
-            $table->unsignedBigInteger( column:'featured_image' );
+            $table->string( column:'featured_image' );
             $table->unsignedBigInteger( column:'location_id' );
 
             $table->unsignedBigInteger( column:'price' );

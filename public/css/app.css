@@ -32379,9 +32379,9 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-.sticky-header-active .feather-menu {
+/* .sticky-header-active .feather-menu {
   color: #000;
-}
+} */
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -188822,3 +188822,4 @@ h1, h2, h3, h4, h5, h6 {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
