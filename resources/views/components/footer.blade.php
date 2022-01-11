@@ -6,7 +6,7 @@
         <div class="text-xs mt-12">&copy; RELATE, All right reserve.</div>
       </div>
 
-      <div class="w-3/4 font-bold leading-8 uppercase">
+      <div class="w-3/4 leading-8 uppercase">
         <div class="flex -mx-6">
           <div class="flex-1 px-6">
             <h3 class="f-title text-xl pb-4 border-b border-gray-400 mb-4">Quick Links</h3>
