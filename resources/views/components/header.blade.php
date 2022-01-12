@@ -8,9 +8,9 @@
 
     <div class="w-full">
       <ul class="flex justify-center">
-        <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="#">Land</a></li>
-        <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="#">Villa</a></li>
-        <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="#">Apartment</a></li>
+        <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="{{route('properties')}}?type=0">Land</a></li>
+        <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="{{route('properties')}}?type=1">Villa</a></li>
+        <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="{{route('properties')}}?type=2">Apartment</a></li>
         <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="#">About Us</a></li>
         <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="#">Blog</a></li>
         <li><a class="inline-block p-4 border-b-2 border-transparent hover:border-b-2 hover:border-gray-400" href="#">Contact Us</a></li>

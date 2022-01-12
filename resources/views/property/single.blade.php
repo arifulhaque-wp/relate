@@ -44,6 +44,7 @@
 
           </div>
         </div>
+
         {{-- Overview --}}
         <div class="md:flex justify-between items-center bg-white p-4 md:p-8 mt-10 shadow-sm">
           <h4 class="text-lg md:w-2/12 mb-3 md:mb-0">Overview</h4>
@@ -69,7 +70,7 @@
                     Apartment
                   @else()
                     Land
-                  @endif()
+                  @endif
                   </span>
                 </li>
                 <li class="flex text-sm">
@@ -105,7 +106,7 @@
                     Private
                   @else()
                     No
-                  @endif()
+                  @endif
                   </span>
                 </li>
               </ul>
@@ -113,7 +114,7 @@
           </div>
         </div>
 
-        {{-- Overview --}}
+        {{-- Why Buy --}}
         <div class="md:flex md:justify-between items-center bg-white p-4 md:p-8 mt-10 shadow-sm">
           <h4 class="text-lg md:w-2/12 mb-3 md:mb-0">Why buy this Property</h4>
           <div class="md:border-l-2 md:border-gray-300 md:pl-5 md:ml-5 md:w-10/12 text-base">
@@ -123,13 +124,11 @@
 
         {{-- Description --}}
         <div class="bg-white p-4 md:p-8 mt-10 shadow-sm" id="description">
-
           <h2 class="font-bold mb-5 text-xl md:text-2xl"> FACILITIES &amp; LOCATION</h2>
 
           {{$property->description}}
 
         </div>
-
       </div>{{-- Left Content End --}}
 
 
@@ -139,62 +138,42 @@
         {{-- Form --}}
         <div class="px-4 py-5 text-left bg-gray-300">
           <h1 class="text-2xl font-normal leading-none mb-5">Enquire about this property</h1>
-
-         
           <p class="mb-6 p-3 bg-green-100 text-green-700">Lorem ipsum dolor sit amet.</p>
-          
-
           <form action="" method="POST" enctype="multipart/form-data">
-            
-
             <div class="">
               <label class="inputLabel" for="name">Name <span class="text-red-800 font-serif">*</span></label>
               <input class="inputField" type="text" id="name" name="name" placeholder="First Name"
                 value="" required>
-
-              
               <p class="text-red-500 mt-2 text-sm">Lorem ipsum, dolor sit!</p>
-              
             </div>
 
             <div class="mt-5">
               <label class="inputLabel" for="phone">Phone <span class="text-red-800 font-serif">*</span></label>
               <input class="inputField" type="text" id="phone" name="phone" placeholder="Phone" value=""
                 required>
-
-              
               <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor, sit.</p>
-              
             </div>
 
             <div class="mt-5">
               <label class="inputLabel" for="email">Email <span class="text-red-800 font-serif">*</span></label>
               <input class="inputField" type="email" id="email" name="email" placeholder="E-mail"
                 value="" required>
-
-              
               <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor sit!</p>
-              
             </div>
 
             <div class="mt-5">
               <label class="inputLabel" for="message">Message <span class="text-red-800 font-serif">*</span></label>
               <textarea class="inputField" id="message" name="message" rows="4"
                 placeholder="I'm interested in this property" required></textarea>
-              
               <p class="text-red-500 mt-2 text-sm">Lorem ipsum dolor sit!</p>
-              
             </div>
+
             <div class="mt-5">
               <button type="submit" class="w-full border-2 uppercase text-center py-3 font-semibold border-red-800 hover:bg-transparent hover:text-red-800 duration-200  text-white bg-red-800 rounded-none"><i class="fa fa-commenting mr-2"></i>Request Details</button>
             </div>
-
           </form>
         </div>
       </div>
-
-
     </div>
-
   </div>
 </x-guest-layout>
