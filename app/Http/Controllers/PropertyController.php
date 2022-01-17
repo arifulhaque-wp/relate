@@ -19,7 +19,11 @@ class PropertyController extends Controller {
 
         $latest_properties = Property::latest();
 
-        if(!empty($request->type)){
+        if ( !empty( $request->sale ) ) {
+            $latest_properties = $latest_properties->where( 'sale', $request->sale );
+        };
+
+        if ( !empty( $request->type ) ) {
             $latest_properties = $latest_properties->where( 'type', $request->type );
         };
 

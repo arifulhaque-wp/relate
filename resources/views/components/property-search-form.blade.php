@@ -15,8 +15,8 @@
       <select id="type" name="type" class="border-0 focus:ring-0">
         <option value="">Type</option>
         <option value="0">Land</option>
-        <option value="1">Apartment</option>
-        <option value="2">Villa</option>
+        <option value="1">Villa</option>
+        <option value="2">Apartment</option>
       </select>
     </div>
     <div class="py-3 self-center border-gray-500 border"></div>

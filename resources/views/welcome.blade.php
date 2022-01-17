@@ -6,12 +6,12 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, minus?</p>
         </div>
     </div>
-    
+
     <!-- Search From Area -->
     <div class="-mt-10">
         <div class="container">
             <div class="rounded-lg bg-white p-4 relative z-20 shadow-lg home-search">
-                @include('components.property-search-form')
+                @include( 'components.property-search-form' )
             </div>
 
         </div>
@@ -19,9 +19,11 @@
 
     <div class="text-center py-32">
         <div class="container">
-            <h2 class="text-bold text-4xl mb-6">Lorem ipsum, dolor sit amet <br />consectetur adipisicing <span class="border-b-2 border-gray-800">distinctio ullam?</span></h2>
+            <h2 class="text-bold text-4xl mb-6">Lorem ipsum, dolor sit amet <br />consectetur adipisicing <span
+                    class="border-b-2 border-gray-800">distinctio ullam?</span></h2>
             <p class="text-bold text-gray-700 mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a class="border-2 px-4 py-1.5 hover:bg-gray-700 hover:text-white text-xl uppercase border-gray-700 rounded-lg inline-block duration-300" href="">Start the review</a>
+            <a class="border-2 px-4 py-1.5 hover:bg-gray-700 hover:text-white text-xl uppercase border-gray-700 rounded-lg inline-block duration-300"
+                href="">Start the review</a>
 
             <h2 class="text-bold text-4xl mt-20">Lorem ipsum dolor sit amet consectetur<br /> adipisicing elit.</h2>
             <div class="w-4/5 mx-auto">
@@ -58,7 +60,8 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading">More Information About Us</h2>
-            <div class="relative rounded-xl bg-cover bg-center py-32" style="background-image: url('/images/footer.jpg')">
+            <div class="relative rounded-xl bg-cover bg-center py-32"
+                style="background-image: url('/images/footer.jpg')">
                 <div class="opacity-50 absolute top-0 left-0 w-full h-full bg-black rounded-xl"></div>
             </div>
             <a href=""></a>
@@ -68,8 +71,8 @@
     <div class="container pt-20">
         <h2 class="section-heading">Last Added Projects</h2>
         <div class="flex flex-wrap justify-between mt-10">
-            @foreach($latest_properties as $property)
-                @include('components.single-property-card', ['property' => $property])
+            @foreach ( $latest_properties as $property )
+                @include( 'components.single-property-card', ['property' => $property] )
             @endforeach
         </div>
     </div>
