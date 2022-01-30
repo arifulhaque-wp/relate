@@ -17,9 +17,9 @@
                 @if ( request( 'type' ) == "0" )
                 - Land
                 @elseif( request( 'type' ) == 1 )
-                - Apartment
-                @elseif( request( 'type' ) == 2 )
                 - Villa
+                @elseif( request( 'type' ) == 2 )
+                - Apartment
                 @endif
             </h2>
         </div>
@@ -41,9 +41,8 @@
             </div>{{-- Left Content End --}}
 
             {{-- Sidebar --}}
-            <div class="md:w-3/12 mt-6 md:ml-6 md:mt-0">
-                {{-- Form --}}
-
+            <div class="md:w-3/12 mt-6 md:ml-6 md:mt-0 vertical-search-form">
+                @include( 'components.property-search-form' )
             </div>
         </div>
     </div>

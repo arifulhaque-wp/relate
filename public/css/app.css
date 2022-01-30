@@ -32379,9 +32379,35 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/* .sticky-header-active .feather-menu {
-  color: #000;
-} */
+.vertical-search-form > form {
+  display: block;
+}
+
+.vertical-search-form > form > div {
+  display: block;
+  min-width: 100%;
+}
+
+.vertical-search-form > form .border-gray-500 {
+  display: none;
+}
+
+.vertical-search-form > form > div > div {
+  margin-bottom: 15px;
+}
+
+.vertical-search-form > form > div.ml-5 {
+  margin-left: 12px;
+}
+
+.vertical-search-form > form > div > input {
+  width: 92%;
+  margin-bottom: 15px;
+}
+
+.vertical-search-form > form > div > button {
+  min-width: 92%;
+}
 
 @media (min-width: 640px) {
   .sm\:container {

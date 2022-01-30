@@ -1,4 +1,4 @@
-<form action="properties" method="GET" class="flex justify-between">
+<form action="{{route('properties')}}" method="GET" class="flex justify-between">
   <div class="flex w-7/12 justify-between items-center">
     <div class="flex flex-col mx-3">
       <!-- <label for="sale">Buy or Rent</label> -->
@@ -8,7 +8,6 @@
         <option value="0">Rent</option>
       </select>
     </div>
-
     <div class="py-3 self-center border-gray-500 border"></div>
     <div class="flex flex-col mx-3">
       <!-- <label for="type">Type</label> -->

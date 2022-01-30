@@ -68,7 +68,7 @@
                     Villa
                   @elseif($property->type == 2)
                     Apartment
-                  @else()
+                  @else
                     Land
                   @endif
                   </span>
@@ -100,13 +100,13 @@
                 <li class="flex text-sm">
                   <div class="flex"><span class="text-sm">Pool:</span></div>
                   <span class="ml-2 font-bold">
-                  @if($property->pool == 1)
-                    Public
-                  @elseif($property->pool == 2)
-                    Private
-                  @else()
-                    No
-                  @endif
+                    @if($property->pool == 1)
+                      Public
+                    @elseif($property->pool == 2)
+                      Private
+                    @else
+                      No
+                    @endif
                   </span>
                 </li>
               </ul>
@@ -124,10 +124,8 @@
 
         {{-- Description --}}
         <div class="bg-white p-4 md:p-8 mt-10 shadow-sm" id="description">
-          <h2 class="font-bold mb-5 text-xl md:text-2xl"> FACILITIES &amp; LOCATION</h2>
-
+          <h2 class="font-bold mb-5 text-xl md:text-2xl">FACILITIES &amp; LOCATION</h2>
           {{$property->description}}
-
         </div>
       </div>{{-- Left Content End --}}
 
