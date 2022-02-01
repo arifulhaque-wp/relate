@@ -13,7 +13,6 @@
             <div class="rounded-lg bg-white p-4 relative z-20 shadow-lg home-search">
                 @include( 'components.property-search-form' )
             </div>
-
         </div>
     </div>
 
@@ -111,7 +110,7 @@
             </div>
         </div>
 
-        <div class="pt-20 text-lg border-b-2 border-gray-200 pb-16">
+        <div class="pt-20 text-lg pb-16">
             <h2 class="section-heading">Additional Services</h2>
             <div class="flex -mx-4 text-center font-bold">
                 <div class="flex-1 px-4">

@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <div class="flex pt-12 pb-12">
+    <div class="flex border-t-2 border-gray-200 pt-12 pb-12">
       <div class="w-1/4 pr-6">
         <a href="{{route('home')}}"><img width="70" src="/images/logo.png" alt=""></a>
         <div class="text-xs mt-12">&copy; RELATE, All right reserve.</div>

@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="flex justify-between items-center w-5/12 ml-5">
-        <input name="property_name" value="" type="search" placeholder="Try to search for something"
+        <input name="search" value="" type="search" placeholder="Try to search for something"
             class="rounded-lg px-4 py-2 w-full mr-4 focus:border-gray-700 focus:ring-0">
         <button type="submit" class="btn bg-gray-800 text-white px-6 py-2 rounded-lg inline-block">Search</button>
     </div>
